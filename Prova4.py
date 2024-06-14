@@ -10,7 +10,7 @@ page_title="Receita Mensal de 5 projetos",
 
 st.header("Dados")
 
-arquivo = "https://github.com/joseagnaldo26/Prova4/blob/main/projetos-1.csv" 
+arquivo = "https://raw.github.com/joseagnaldo26/Prova4/blob/main/projetos-1.csv" 
 dfe = pd.read_csv(arquivo, sep=';') 
 st.dataframe(dfe.head(23))
 
