@@ -16,7 +16,7 @@ st.dataframe(dfe.head(23))
 
 df1 = pd.DataFrame({'mes': [12], 'ano': [2023], 'Projeto1': [29376], 'Projeto2': [40392], 'Projeto3': [63648], 'Projeto4': [29376], 'Projeto5': [25704] })
 df = pd.concat([df, df1])
-print(df.tail())
+st.dataframe(df.tail())
 
 colunas = ['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5']
 df.groupby('ano')[colunas].sum()
