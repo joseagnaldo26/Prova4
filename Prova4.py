@@ -31,11 +31,3 @@ df.plot["Projeto4"].plot(kind = 'hist')
 st.pyplot(fig)
 
 ip.list_series('Selic')
-
-selic = ip.timeseries('BM12_TJOVER12', yearGreaterThan=2021, yearSmallerThan=2024)
-selic
-
-fig, ax = plt.subplots()
-ip.timeseries('BM12_TJOVER12', year=2021).plot("MONTH", "VALUE ((% a.m.))")
-ip.timeseries('BM12_TJOVER12', year=2022).plot("MONTH", "VALUE ((% a.m.))")
-st.pyplot(fig)
