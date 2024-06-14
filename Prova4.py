@@ -11,8 +11,8 @@ page_title="Receita Mensal de 5 projetos",
 st.header("Dados")
 
 arquivo = "https://github.com/joseagnaldo26/Prova4/blob/main/projetos-1.csv" 
-df = pd.read_csv(arquivo, sep=';') 
-st.dataframe (df.head(23))
+dfe = pd.read_csv(arquivo, sep=';') 
+st.dataframe (dfe.head(23))
 
 df1 = pd.DataFrame({'mes': [12], 'ano': [2023], 'Projeto1': [29376], 'Projeto2': [40392], 'Projeto3': [63648], 'Projeto4': [29376], 'Projeto5': [25704] })
 df = pd.concat([df, df1])
