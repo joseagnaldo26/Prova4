@@ -15,7 +15,7 @@ df = pd.read_csv(arquivo, sep=';')
 st.dataframe(df.head(23))
 
 df1 = pd.DataFrame({'mes': [12], 'ano': [2023], 'Projeto1': [29376], 'Projeto2': [40392], 'Projeto3': [63648], 'Projeto4': [29376], 'Projeto5': [25704] })
-df.plot( ax=ax)
+df = pd.concat([df, df1])
 st.dataframe(df.tail())
 
 colunas = ['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5']
