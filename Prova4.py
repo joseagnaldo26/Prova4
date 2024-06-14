@@ -22,7 +22,7 @@ colunas = ['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5']
 df.groupby('ano')[colunas].sum()
 
 fig, ax = plt.subplots()
-df.plot( ax=ax)
+df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*')
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
