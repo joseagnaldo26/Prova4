@@ -26,8 +26,8 @@ df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', mar
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-df.plot["Projeto1"].plot(kind = 'hist')
-df.plot["Projeto4"].plot(kind = 'hist')
+df.plot["Projeto1"].plot(kind = 'hist',ax=ax)
+df.plot["Projeto4"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
 
 ip.list_series('Selic')
